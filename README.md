@@ -87,7 +87,12 @@ mysql -u root -p
 sudo ln -s /etc/nginx/sites-available/fundosms.co.zw /etc/nginx/sites-enabled
 ```
 
-## start mysql
+### start mysql
 ```
 sudo service mysql start
+```
+
+### import sql file in mysql
+```
+mysql -u root -p jikatino < jikatino.sql
 ```
