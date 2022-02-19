@@ -76,3 +76,8 @@ server {
 }
 
 ```
+
+### login to mysql
+```
+mysql -u root -p
+```
