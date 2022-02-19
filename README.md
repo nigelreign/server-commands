@@ -81,3 +81,8 @@ server {
 ```
 mysql -u root -p
 ```
+
+### copy config in sites-available to sites-enabled
+```
+sudo ln -s /etc/nginx/sites-available/fundosms.co.zw /etc/nginx/sites-enabled
+```
