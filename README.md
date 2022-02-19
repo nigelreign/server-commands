@@ -45,3 +45,13 @@ stdout_logfile=/var/log/tes.out.log
 ```
 chmod +rwx nigel.app
 ```
+
+### restart nginx
+```
+sudo systemctl restart nginx
+```
+
+### nginx status
+```
+sudo systemctl status nginx
+```
