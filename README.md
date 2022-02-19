@@ -86,3 +86,8 @@ mysql -u root -p
 ```
 sudo ln -s /etc/nginx/sites-available/fundosms.co.zw /etc/nginx/sites-enabled
 ```
+
+## start mysql
+```
+sudo service mysql start
+```
