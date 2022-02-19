@@ -55,3 +55,24 @@ sudo systemctl restart nginx
 ```
 sudo systemctl status nginx
 ```
+
+### pointing django app to a domain or ip and port
+
+```
+server {
+    listen 80;
+    server_name mydomain.co.zw;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static/ {
+        root /home/test;
+    }
+    location / {
+        include proxy_params;
+        proxy_pass http://0.0.0.0:8000;
+        proxy_connect_timeout 1800s;
+        proxy_read_timeout 1800s;
+    }
+}
+
+```
