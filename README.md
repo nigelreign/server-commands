@@ -106,3 +106,7 @@ SHOW VARIABLES LIKE "%timeout";
 SET GLOBAL connect_timeout = 600; 
 ```
 
+### reloading apache2
+```
+sudo systemctl reload apache2
+```
