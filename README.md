@@ -96,3 +96,13 @@ sudo service mysql start
 ```
 mysql -u root -p jikatino < jikatino.sql
 ```
+
+### Increase timeout limit mysql
+login to mysql and do:
+```
+SHOW VARIABLES LIKE "%timeout";
+```
+```
+SET GLOBAL connect_timeout = 600; 
+```
+
