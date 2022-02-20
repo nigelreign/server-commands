@@ -46,6 +46,11 @@ stdout_logfile=/var/log/tes.out.log
 chmod +rwx 
 ```
 
+### giving write permissions to a folder
+```
+sudo chmod a+rwx 
+```
+
 ### restart nginx
 ```
 sudo systemctl restart nginx
