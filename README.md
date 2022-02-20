@@ -110,3 +110,8 @@ SET GLOBAL connect_timeout = 600;
 ```
 sudo systemctl reload apache2
 ```
+
+### tail logs showing number of lines
+```
+tail -n 100 /var/log/fundobot.out.log
+```
