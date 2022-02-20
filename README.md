@@ -97,6 +97,13 @@ sudo service mysql start
 mysql -u root -p jikatino < jikatino.sql
 ```
 
+
+### export sql file in mysql
+```
+mysqldump -u root -p jikatino < dump_12-01-2022.sql
+```
+
+
 ### Increase timeout limit mysql
 login to mysql and do:
 ```
