@@ -43,7 +43,7 @@ stdout_logfile=/var/log/tes.out.log
 ### giving permissions to a file
 
 ```
-chmod +rwx nigel.app
+chmod +rwx 
 ```
 
 ### restart nginx
