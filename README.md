@@ -127,3 +127,15 @@ sudo systemctl reload apache2
 ```
 tail -n 100 /var/log/fundobot.out.log
 ```
+
+### copy file from server to local
+
+#### with pem file
+```
+sudo scp -i test.pem root@192.123.456.789:/home/nigelreign/myscript.py /home
+```
+
+#### without pem file
+```
+sudo scp -i root@192.123.456.789:/home/nigelreign/myscript.py /home
+```
