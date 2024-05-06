@@ -139,3 +139,14 @@ sudo scp -i test.pem root@192.123.456.789:/home/nigelreign/myscript.py /home
 ```
 sudo scp -i root@192.123.456.789:/home/nigelreign/myscript.py /home
 ```
+
+# Install ssl certificate using certbot
+
+```
+sudo apt update
+sudo apt install certbot python3-certbot-nginx
+```
+```
+sudo certbot --nginx -d your_domain.com -d www.your_domain.com
+sudo nginx -t
+```
